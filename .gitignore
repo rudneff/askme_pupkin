@@ -3,4 +3,5 @@ node_modules/
 .idea/
 .vscode/
 *.pyc
-__pychache__/
+__pycache__/
+*.sqlite3

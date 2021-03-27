@@ -1,0 +1,17 @@
+{% load static %}
+
+<div class="row question-box">
+    <div class="col-3">
+        <img src="{% static "img/KoalaBear200x200.jpg" %}" alt="" class="question-img">
+    </div>
+    <div class="col-9">
+        <div class="question-title">
+            <a href="{% url "one_question" pk=question.id %}">
+                {{ question.title }}
+            </a>
+        </div>
+        <div class="question-text">
+            {{ question.text }}
+        </div>
+    </div>
+</div>
